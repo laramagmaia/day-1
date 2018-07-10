@@ -3,6 +3,7 @@ html {
 	font-size: 24px ;
 	padding: 0;
 	margin: 0;
+	background-color: lightcoral;
 }
 
 body {
@@ -10,37 +11,60 @@ body {
 	margin: 0;
 }
 header {
-	background-color: lightsteelblue;
 	grid-column: span 3;
-	padding: 16px; 
+	padding: 16px;
+	text-align: center;
+	font-size: 100px;
+	font-family: bold;
 }
 
 nav {
-	background-color:indianred;
 	padding: 16px; 
-
+	min-height:100%;
 }
 
 main {
-	background-color:lightcoral;
 	padding: 16px; 
+	border-right: 2px solid black; 
+	border-left: 2px solid black;
 }
 
 aside {
-	background-color:indianred;
 	padding: 16px;
 }
 
-footer {
-	background-color:lightsteelblue;  
+footer {  
 	grid-column: span 3;
 	padding: 16px;
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows: 20% 80%;
 }
 
 .container {
-	border: 2px solid rgba (0,0,0 0.4);
 	display: grid;
 	min-height: 100vh;
 	grid-template-columns: 20% auto 20%; 
 	grid-template-rows: auto 1fr auto; 
 }
+
+
+.sticky {
+	position: fixed;
+	top: 0;
+}
+
+.profile-pic {
+	max-width: 80px;
+}
+
+.map { width: 80%; height:20%; }
+
+.friends {
+	grid-column: span 3;
+}
+
+.photo {max-width: 100px}
+
+.posts {padding: 16px; 
+
