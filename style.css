@@ -1,0 +1,46 @@
+html {
+	font-family: Didot;
+	font-size: 24px ;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+header {
+	background-color: lightsteelblue;
+	grid-column: span 3;
+	padding: 16px; 
+}
+
+nav {
+	background-color:indianred;
+	padding: 16px; 
+
+}
+
+main {
+	background-color:lightcoral;
+	padding: 16px; 
+}
+
+aside {
+	background-color:indianred;
+	padding: 16px;
+}
+
+footer {
+	background-color:lightsteelblue;  
+	grid-column: span 3;
+	padding: 16px;
+}
+
+.container {
+	border: 2px solid rgba (0,0,0 0.4);
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 20% auto 20%; 
+	grid-template-rows: auto 1fr auto; 
+}
